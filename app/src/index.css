@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --color-base: #0A0F1C;
+  --color-panel: #121826;
+  --color-line: #232B3D;
+  --color-ink: #E6EAF2;
+  --color-faint: #8891A5;
+  --color-amber: #FFB454;
+  --color-teal: #5EEAD4;
+
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+body {
+  background-color: var(--color-base);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
+
+@keyframes pulse-travel {
+  0%   { left: 0%;   opacity: 0; }
+  8%   { opacity: 1; }
+  92%  { opacity: 1; }
+  100% { left: 100%; opacity: 0; }
+}
+
+.pipeline-pulse {
+  animation: pulse-travel 3.2s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pipeline-pulse {
+    animation: none;
+    opacity: 1;
+    left: 50%;
+  }
+}

@@ -1,0 +1,17 @@
+node_modules/
+app/node_modules/
+app/dist/
+dist/
+.env
+.env.local
+.env.*.local
+infra/.terraform/
+infra/*.tfstate
+infra/*.tfstate.backup
+infra/.terraform.lock.hcl
+infra/terraform.tfvars
+.DS_Store
+.vscode/
+.idea/
+npm-debug.log*
+*.pkg
