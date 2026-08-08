@@ -2,7 +2,7 @@
 
 A version of my portfolio project built to explore self-hosted CI/CD, after building the same pipeline with GitHub Actions (a fully managed service) in earlier projects. This one uses Jenkins running on my own EC2 instance, giving me hands-on experience with the parts a managed CI/CD service normally hides — provisioning the server, installing and troubleshooting the runtime, and managing credentials directly.
 
-**Live site:** [add your CloudFront URL here]
+**Live site:** https://d1qtvv9lglkhmd.cloudfront.net
 **Repository:** https://github.com/thepradeepz/jenkins-cicd-portfolio
 
 ---
